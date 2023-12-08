@@ -1,5 +1,5 @@
-def split_txt(filename):
 
+def split_txt(filename):
     with open(filename, 'r') as txt:
         lines = txt.readlines()
 
