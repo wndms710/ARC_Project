@@ -1,9 +1,11 @@
-t = '8.5192514350668	1.0000000000001'
+def tap_to_space(filename):
+    fr = open(filename, 'r')
+    lines = fr.readlines()
+    fr.close()
 
-a = t.split('\t')
+    fw = open(filename, 'w')
+    for line in lines:
+        fw.write(line.replace('\t', ' '))
+    fw.close()
 
-array = [] 
-
-array.append(float(a[1]))
-
-print(array)
+tap_to_space('C:\\Users\\User\\Desktop\\ARC_Project\\T_data_final(1209)-3.txt')

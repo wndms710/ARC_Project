@@ -25,12 +25,12 @@ def add_parameters(filename):
             t = strip_line.split('\t')
             text_sub = text + t[0] + '\t' + t[1]
                         
-            file_name = 'C:\\Users\\o\\Desktop\\ARC_Project-main\\ARC_Project-main\\T_files_4\\T_data.txt'
+            file_name = 'C:\\Users\\User\\Desktop\\ARC_Project\\T_files_4\\T_data.txt'
             fw = open(file_name, 'a')
             fw.write(f'{text_sub}\n')
             fw.close()
 
-            if cnt == 233:
+            if cnt == 1004:
                cnt = 0
 
         cnt = cnt + 1
@@ -41,8 +41,9 @@ for i in range(1, 919):
     filename_array.append(f'T_{str(i)}.txt')
 
 for name in filename_array:
-    name = 'C:\\Users\\o\\Desktop\\ARC_Project-main\\ARC_Project-main\\T_files_2\\' + name
+    name = 'C:\\Users\\User\\Desktop\\ARC_Project\\T_files_2\\' + name
     add_parameters(name)
+    print(f'{name} Done!')
 
 
 print('Finish!')
